@@ -1,0 +1,232 @@
+{
+  "bare": {
+    "n": 40,
+    "quadrants": {
+      "low_stakes_low_ambig": {
+        "label_desc": "Low stakes / Low ambiguity",
+        "n": 10,
+        "jev_correct": 10,
+        "jev_n": 10,
+        "jev_acc": 1.0,
+        "llm_correct": 10,
+        "llm_n": 10,
+        "llm_acc": 1.0
+      },
+      "low_stakes_high_ambig": {
+        "label_desc": "Low stakes / High ambiguity  (looks scary, is safe)",
+        "n": 10,
+        "jev_correct": 3,
+        "jev_n": 10,
+        "jev_acc": 0.3,
+        "llm_correct": 8,
+        "llm_n": 10,
+        "llm_acc": 0.8
+      },
+      "high_stakes_low_ambig": {
+        "label_desc": "High stakes / Low ambiguity",
+        "n": 10,
+        "jev_correct": 10,
+        "jev_n": 10,
+        "jev_acc": 1.0,
+        "llm_correct": 10,
+        "llm_n": 10,
+        "llm_acc": 1.0
+      },
+      "high_stakes_high_ambig": {
+        "label_desc": "High stakes / High ambiguity (looks routine, is dangerous)",
+        "n": 10,
+        "jev_correct": 10,
+        "jev_n": 10,
+        "jev_acc": 1.0,
+        "llm_correct": 10,
+        "llm_n": 10,
+        "llm_acc": 1.0
+      }
+    },
+    "overall": {
+      "jev_acc": 0.825,
+      "jev_n": 40,
+      "llm_acc": 0.95,
+      "llm_n": 40
+    },
+    "latency": {
+      "jev_ms": {
+        "p50": 806.904021000264,
+        "p95": 1054.0125309001264,
+        "mean": 839.3773791251078,
+        "n": 40
+      },
+      "llm_ms": {
+        "p50": 1585.473479499342,
+        "p95": 1915.6081954985889,
+        "mean": 1620.2419176746844,
+        "n": 40
+      },
+      "p50_speedup_x": 2.0
+    },
+    "cost_per_1k_calls_usd": {
+      "jev": 0.01511,
+      "haiku": 1.3217,
+      "haiku_mean_in_tok": 836.1,
+      "haiku_mean_out_tok": 97.1,
+      "_note": "Haiku tokens are REAL (from Messages API usage). Jev input approximated from state length; Jev output is free per catalog.",
+      "haiku_over_jev_x": 87.5
+    },
+    "calibration": {
+      "reliability": [
+        {
+          "bucket": "0.0-0.2",
+          "n": 12,
+          "mean_pred": 0.037,
+          "empirical_risky_rate": 0.0
+        },
+        {
+          "bucket": "0.2-0.4",
+          "n": 1,
+          "mean_pred": 0.35,
+          "empirical_risky_rate": 0.0
+        },
+        {
+          "bucket": "0.4-0.6",
+          "n": 1,
+          "mean_pred": 0.54,
+          "empirical_risky_rate": 0.0
+        },
+        {
+          "bucket": "0.6-0.8",
+          "n": 5,
+          "mean_pred": 0.702,
+          "empirical_risky_rate": 0.2
+        },
+        {
+          "bucket": "0.8-1.0",
+          "n": 21,
+          "mean_pred": 0.941,
+          "empirical_risky_rate": 0.905
+        }
+      ],
+      "brier_overall": 0.1014,
+      "brier_by_quadrant": {
+        "low_stakes_low_ambig": 0.0005,
+        "low_stakes_high_ambig": 0.3872,
+        "high_stakes_low_ambig": 0.0008,
+        "high_stakes_high_ambig": 0.0169
+      }
+    }
+  },
+  "enriched": {
+    "n": 40,
+    "quadrants": {
+      "low_stakes_low_ambig": {
+        "label_desc": "Low stakes / Low ambiguity",
+        "n": 10,
+        "jev_correct": 10,
+        "jev_n": 10,
+        "jev_acc": 1.0,
+        "llm_correct": 10,
+        "llm_n": 10,
+        "llm_acc": 1.0
+      },
+      "low_stakes_high_ambig": {
+        "label_desc": "Low stakes / High ambiguity  (looks scary, is safe)",
+        "n": 10,
+        "jev_correct": 9,
+        "jev_n": 10,
+        "jev_acc": 0.9,
+        "llm_correct": 10,
+        "llm_n": 10,
+        "llm_acc": 1.0
+      },
+      "high_stakes_low_ambig": {
+        "label_desc": "High stakes / Low ambiguity",
+        "n": 10,
+        "jev_correct": 10,
+        "jev_n": 10,
+        "jev_acc": 1.0,
+        "llm_correct": 10,
+        "llm_n": 10,
+        "llm_acc": 1.0
+      },
+      "high_stakes_high_ambig": {
+        "label_desc": "High stakes / High ambiguity (looks routine, is dangerous)",
+        "n": 10,
+        "jev_correct": 10,
+        "jev_n": 10,
+        "jev_acc": 1.0,
+        "llm_correct": 10,
+        "llm_n": 10,
+        "llm_acc": 1.0
+      }
+    },
+    "overall": {
+      "jev_acc": 0.975,
+      "jev_n": 40,
+      "llm_acc": 1.0,
+      "llm_n": 40
+    },
+    "latency": {
+      "jev_ms": {
+        "p50": 795.0262499998644,
+        "p95": 971.4867975998455,
+        "mean": 831.8226509748911,
+        "n": 40
+      },
+      "llm_ms": {
+        "p50": 1560.7328124997366,
+        "p95": 1837.403847899986,
+        "mean": 1589.078965699855,
+        "n": 40
+      },
+      "p50_speedup_x": 2.0
+    },
+    "cost_per_1k_calls_usd": {
+      "jev": 0.01822,
+      "haiku": 1.37412,
+      "haiku_mean_in_tok": 873.8,
+      "haiku_mean_out_tok": 100.1,
+      "_note": "Haiku tokens are REAL (from Messages API usage). Jev input approximated from state length; Jev output is free per catalog.",
+      "haiku_over_jev_x": 75.4
+    },
+    "calibration": {
+      "reliability": [
+        {
+          "bucket": "0.0-0.2",
+          "n": 17,
+          "mean_pred": 0.066,
+          "empirical_risky_rate": 0.0
+        },
+        {
+          "bucket": "0.2-0.4",
+          "n": 2,
+          "mean_pred": 0.205,
+          "empirical_risky_rate": 0.0
+        },
+        {
+          "bucket": "0.4-0.6",
+          "n": 1,
+          "mean_pred": 0.51,
+          "empirical_risky_rate": 0.0
+        },
+        {
+          "bucket": "0.6-0.8",
+          "n": 1,
+          "mean_pred": 0.67,
+          "empirical_risky_rate": 1.0
+        },
+        {
+          "bucket": "0.8-1.0",
+          "n": 19,
+          "mean_pred": 0.977,
+          "empirical_risky_rate": 1.0
+        }
+      ],
+      "brier_overall": 0.0153,
+      "brier_by_quadrant": {
+        "low_stakes_low_ambig": 0.0004,
+        "low_stakes_high_ambig": 0.0486,
+        "high_stakes_low_ambig": 0.0005,
+        "high_stakes_high_ambig": 0.0117
+      }
+    }
+  }
+}

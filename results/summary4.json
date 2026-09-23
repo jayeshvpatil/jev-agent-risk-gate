@@ -1,0 +1,271 @@
+{
+  "twins": {
+    "bare": {
+      "n": 40,
+      "acc": {
+        "jev": 0.5,
+        "sonnet": 0.5,
+        "slm": 0.5,
+        "laya": 0.5
+      },
+      "fn_rate": {
+        "jev": 0.1,
+        "sonnet": 0.15,
+        "slm": 0.45,
+        "laya": 0.8
+      },
+      "brier": {
+        "jev": 0.4038,
+        "slm": 0.4437,
+        "laya": 0.2558
+      },
+      "mean_conf_bare": {
+        "jev": 0.868,
+        "slm": 0.922,
+        "laya": 0.557,
+        "sonnet": 0.93
+      },
+      "latency_p50_ms": {
+        "jev": 816.7197290003969,
+        "sonnet": 3135.4502289996162,
+        "slm": 65.19502100127283,
+        "laya": 59.87591649318347
+      },
+      "ci95": {
+        "jev_acc": [
+          0.5,
+          0.5
+        ],
+        "jev_fn": [
+          0.0,
+          0.25
+        ],
+        "sonnet_acc": [
+          0.5,
+          0.5
+        ],
+        "sonnet_fn": [
+          0.0,
+          0.3
+        ],
+        "slm_acc": [
+          0.5,
+          0.5
+        ],
+        "slm_fn": [
+          0.25,
+          0.65
+        ],
+        "laya_acc": [
+          0.5,
+          0.5
+        ],
+        "laya_fn": [
+          0.6,
+          0.95
+        ]
+      }
+    },
+    "enriched": {
+      "n": 40,
+      "acc": {
+        "jev": 0.8,
+        "sonnet": 1.0,
+        "slm": 0.9,
+        "laya": 0.775
+      },
+      "fn_rate": {
+        "jev": 0.0,
+        "sonnet": 0.0,
+        "slm": 0.1,
+        "laya": 0.35
+      },
+      "brier": {
+        "jev": 0.1154,
+        "slm": 0.093,
+        "laya": 0.1779
+      },
+      "latency_p50_ms": {
+        "jev": 825.2371039998252,
+        "sonnet": 3078.9913545013405,
+        "slm": 88.58566700655501,
+        "laya": 80.34022949868813
+      },
+      "ci95": {
+        "jev_acc": [
+          0.7,
+          0.9
+        ],
+        "jev_fn": [
+          0.0,
+          0.161
+        ],
+        "sonnet_acc": [
+          0.839,
+          1.0
+        ],
+        "sonnet_fn": [
+          0.0,
+          0.161
+        ],
+        "slm_acc": [
+          0.775,
+          1.0
+        ],
+        "slm_fn": [
+          0.0,
+          0.25
+        ],
+        "laya_acc": [
+          0.675,
+          0.875
+        ],
+        "laya_fn": [
+          0.15,
+          0.55
+        ]
+      }
+    }
+  },
+  "traps": {
+    "bare": {
+      "n": 32,
+      "acc": {
+        "jev": 0.5,
+        "sonnet": 0.469,
+        "slm": 0.5,
+        "laya": 0.5
+      },
+      "fn_rate": {
+        "jev": 0.438,
+        "sonnet": 0.438,
+        "slm": 0.75,
+        "laya": 0.875
+      },
+      "brier": {
+        "jev": 0.3393,
+        "slm": 0.4548,
+        "laya": 0.2591
+      },
+      "mean_conf_bare": {
+        "jev": 0.763,
+        "slm": 0.945,
+        "laya": 0.583,
+        "sonnet": 0.877
+      },
+      "latency_p50_ms": {
+        "jev": 814.7949374979362,
+        "sonnet": 2909.4872914974985,
+        "slm": 65.02333351090783,
+        "laya": 58.71008350368356
+      },
+      "ci95": {
+        "jev_acc": [
+          0.5,
+          0.5
+        ],
+        "jev_fn": [
+          0.188,
+          0.688
+        ],
+        "sonnet_acc": [
+          0.406,
+          0.5
+        ],
+        "sonnet_fn": [
+          0.188,
+          0.688
+        ],
+        "slm_acc": [
+          0.5,
+          0.5
+        ],
+        "slm_fn": [
+          0.5,
+          0.938
+        ],
+        "laya_acc": [
+          0.5,
+          0.5
+        ],
+        "laya_fn": [
+          0.688,
+          1.0
+        ]
+      }
+    },
+    "enriched": {
+      "n": 32,
+      "acc": {
+        "jev": 0.906,
+        "sonnet": 0.969,
+        "slm": 1.0,
+        "laya": 0.844
+      },
+      "fn_rate": {
+        "jev": 0.062,
+        "sonnet": 0.0,
+        "slm": 0.0,
+        "laya": 0.25
+      },
+      "brier": {
+        "jev": 0.0786,
+        "slm": 0.0123,
+        "laya": 0.1587
+      },
+      "latency_p50_ms": {
+        "jev": 843.1567289990198,
+        "sonnet": 2889.178791501763,
+        "slm": 103.23843799415044,
+        "laya": 82.28343749942724
+      },
+      "ci95": {
+        "jev_acc": [
+          0.812,
+          1.0
+        ],
+        "jev_fn": [
+          0.0,
+          0.188
+        ],
+        "sonnet_acc": [
+          0.906,
+          1.0
+        ],
+        "sonnet_fn": [
+          0.0,
+          0.194
+        ],
+        "slm_acc": [
+          0.806,
+          1.0
+        ],
+        "slm_fn": [
+          0.0,
+          0.194
+        ],
+        "laya_acc": [
+          0.719,
+          0.938
+        ],
+        "laya_fn": [
+          0.062,
+          0.438
+        ]
+      }
+    }
+  },
+  "_arms": [
+    "jev",
+    "sonnet",
+    "slm",
+    "laya"
+  ],
+  "cost_per_1k_usd": {
+    "jev": 0.03608,
+    "slm": 0.12025,
+    "sonnet": 4.27623,
+    "laya": 0.12025,
+    "_note": "SLM and Laya are self-hosted (Mac): marginal cost ~electricity; the $/1k shown estimates a commodity cloud GPU at conservative throughput."
+  }
+}

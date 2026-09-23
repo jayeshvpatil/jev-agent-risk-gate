@@ -1,0 +1,143 @@
+{
+  "bare": {
+    "n": 40,
+    "overall": {
+      "jev_acc": 0.5,
+      "jev_n": 40,
+      "sonnet_acc": 0.5,
+      "sonnet_n": 40
+    },
+    "by_variant": {
+      "safe": {
+        "n": 20,
+        "jev_acc": 0.1,
+        "sonnet_acc": 0.15
+      },
+      "danger": {
+        "n": 20,
+        "jev_acc": 0.9,
+        "sonnet_acc": 0.85
+      }
+    },
+    "twins": {
+      "n_pairs": 20,
+      "jev_same_verdict_rate": 1.0,
+      "jev_correct_flip_rate": 0.0,
+      "sonnet_same_verdict_rate": 1.0,
+      "sonnet_correct_flip_rate": 0.0
+    },
+    "confidence": {
+      "jev_mean_p": 0.848,
+      "jev_mean_dist_from_half": 0.368,
+      "jev_frac_p_ge_0.8_or_le_0.2": 0.825,
+      "sonnet_mean_confidence": 0.93,
+      "sonnet_frac_conf_ge_0.8": 1.0
+    },
+    "latency": {
+      "jev_ms": {
+        "p50": 816.7197290003969,
+        "p95": 1054.5097559528583,
+        "n": 40
+      },
+      "sonnet_ms": {
+        "p50": 3135.4502289996162,
+        "p95": 4378.164883351742,
+        "n": 40
+      }
+    },
+    "jev_brier": 0.4038,
+    "bootstrap_ci_95": {
+      "jev_overall": [
+        0.5,
+        0.5
+      ],
+      "sonnet_overall": [
+        0.5,
+        0.5
+      ],
+      "jev_safe": [
+        0.0,
+        0.25
+      ],
+      "sonnet_safe": [
+        0.0,
+        0.3
+      ]
+    }
+  },
+  "enriched": {
+    "n": 40,
+    "overall": {
+      "jev_acc": 0.8,
+      "jev_n": 40,
+      "sonnet_acc": 1.0,
+      "sonnet_n": 40
+    },
+    "by_variant": {
+      "safe": {
+        "n": 20,
+        "jev_acc": 0.6,
+        "sonnet_acc": 1.0
+      },
+      "danger": {
+        "n": 20,
+        "jev_acc": 1.0,
+        "sonnet_acc": 1.0
+      }
+    },
+    "twins": {
+      "n_pairs": 20,
+      "jev_same_verdict_rate": 0.4,
+      "jev_correct_flip_rate": 0.6,
+      "sonnet_same_verdict_rate": 0.0,
+      "sonnet_correct_flip_rate": 1.0
+    },
+    "confidence": {
+      "jev_mean_p": 0.7,
+      "jev_mean_dist_from_half": 0.31,
+      "jev_frac_p_ge_0.8_or_le_0.2": 0.575,
+      "sonnet_mean_confidence": 0.928,
+      "sonnet_frac_conf_ge_0.8": 1.0
+    },
+    "latency": {
+      "jev_ms": {
+        "p50": 825.2371039998252,
+        "p95": 965.4749090024776,
+        "n": 40
+      },
+      "sonnet_ms": {
+        "p50": 3078.9913545013405,
+        "p95": 4311.713523201615,
+        "n": 40
+      }
+    },
+    "jev_brier": 0.1154,
+    "bootstrap_ci_95": {
+      "jev_overall": [
+        0.7,
+        0.9
+      ],
+      "sonnet_overall": [
+        1.0,
+        1.0
+      ],
+      "jev_safe": [
+        0.4,
+        0.8
+      ],
+      "sonnet_safe": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "cost_per_1k_calls_usd": {
+    "jev": 0.01684,
+    "sonnet": 4.24984,
+    "jev_mean_in_tok": 400.9,
+    "sonnet_mean_in_tok": 857.8,
+    "sonnet_mean_out_tok": 111.8,
+    "_note": "Sonnet tokens REAL (Messages API usage); Jev input REAL (system_one.usage), output free per catalog.",
+    "sonnet_over_jev_x": 252.4
+  }
+}

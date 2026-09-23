@@ -1,0 +1,107 @@
+{
+  "bare": {
+    "n": 24,
+    "overall": {
+      "jev_acc": 0.5,
+      "jev_n": 24,
+      "sonnet_acc": 0.5,
+      "sonnet_n": 24
+    },
+    "by_variant": {
+      "safe": {
+        "n": 12,
+        "jev_acc": 0.083,
+        "sonnet_acc": 0.25
+      },
+      "danger": {
+        "n": 12,
+        "jev_acc": 0.917,
+        "sonnet_acc": 0.75
+      }
+    },
+    "twins": {
+      "n_pairs": 12,
+      "jev_same_verdict_rate": 1.0,
+      "jev_correct_flip_rate": 0.0,
+      "sonnet_same_verdict_rate": 1.0,
+      "sonnet_correct_flip_rate": 0.0
+    },
+    "confidence": {
+      "jev_mean_p": 0.863,
+      "jev_mean_dist_from_half": 0.38,
+      "jev_frac_p_ge_0.8_or_le_0.2": 0.875,
+      "sonnet_mean_confidence": 0.913,
+      "sonnet_frac_conf_ge_0.8": 1.0
+    },
+    "latency": {
+      "jev_ms": {
+        "p50": 820.4961664996517,
+        "p95": 1082.0894420005056,
+        "n": 24
+      },
+      "sonnet_ms": {
+        "p50": 2764.4502710008965,
+        "p95": 3274.762514250142,
+        "n": 24
+      }
+    },
+    "jev_brier": 0.406
+  },
+  "enriched": {
+    "n": 24,
+    "overall": {
+      "jev_acc": 0.833,
+      "jev_n": 24,
+      "sonnet_acc": 1.0,
+      "sonnet_n": 24
+    },
+    "by_variant": {
+      "safe": {
+        "n": 12,
+        "jev_acc": 0.667,
+        "sonnet_acc": 1.0
+      },
+      "danger": {
+        "n": 12,
+        "jev_acc": 1.0,
+        "sonnet_acc": 1.0
+      }
+    },
+    "twins": {
+      "n_pairs": 12,
+      "jev_same_verdict_rate": 0.333,
+      "jev_correct_flip_rate": 0.667,
+      "sonnet_same_verdict_rate": 0.0,
+      "sonnet_correct_flip_rate": 1.0
+    },
+    "confidence": {
+      "jev_mean_p": 0.71,
+      "jev_mean_dist_from_half": 0.313,
+      "jev_frac_p_ge_0.8_or_le_0.2": 0.5,
+      "sonnet_mean_confidence": 0.932,
+      "sonnet_frac_conf_ge_0.8": 1.0
+    },
+    "latency": {
+      "jev_ms": {
+        "p50": 787.1382494995487,
+        "p95": 910.3249937508735,
+        "n": 24
+      },
+      "sonnet_ms": {
+        "p50": 2814.7066045003157,
+        "p95": 3342.4129705492305,
+        "n": 24
+      }
+    },
+    "jev_brier": 0.1172
+  },
+  "cost_per_1k_calls_usd": {
+    "jev": 0.01694,
+    "sonnet": 4.07569,
+    "jev_mean_in_tok": 403.4,
+    "sonnet_mean_in_tok": 858.6,
+    "sonnet_mean_out_tok": 100,
+    "_note": "Sonnet tokens REAL (Messages API usage); Jev input REAL (system_one.usage), output free per catalog.",
+    "sonnet_over_jev_x": 240.6
+  }
+}
